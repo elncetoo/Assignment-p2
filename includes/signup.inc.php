@@ -31,11 +31,13 @@ if (empty($last)){
 				header("Location: ../signup.php?error=username");
 				exit();		
 	} else {
+		$hashed_password = password_hash($pwd, PASSWORD_DEFAULT);
 		$sql = "INSERT INTO user (first, last, uid, pwd) 
-		VALUES ('$first', '$last', '$uid', '$pwd')";
+		VALUES ('$first', '$last', '$uid', '$hashed_password')";
 		$result = mysqli_query($conn, $sql);
+		
 		header("Location: ../index.php");
 	}
-
+    }
 
 
