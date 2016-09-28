@@ -20,12 +20,14 @@ nav ul li {
 	list-style:none;
 	float: left;
 	margin-right: 40px;
+	font-size: 14px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 nav ul li a {
 	color: white;
 	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 13px;
+	font-size: 14px;
 }
 
 nav ul form {
@@ -44,7 +46,7 @@ nav ul form button {
 	margin-right: 20px;
 	background-color: black;
 	color: white;
-	font-size:14px;
+	font-size:13px;
 	cursor: pointer;
 	
 }
